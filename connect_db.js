@@ -6,7 +6,7 @@ const mongo_url = process.env.MONGO_URL ;
 const connectDB = async () => {
     try {
         // Removed useNewUrlParser and useUnifiedTopology
-        await mongoose.connect("usage :- mongodb+srv://TM_sotware_owner:2005@cluster0.6hhoa.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0");
+        await mongoose.connect("mongodb+srv://TM_sotware_owner:2005@cluster0.6hhoa.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0");
         console.log('MongoDB Connected...');
     } catch (err) {
         console.error('Database connection error:', err.message);

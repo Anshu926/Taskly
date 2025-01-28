@@ -12,7 +12,7 @@ const session = require("express-session");
 const MongoStore = require("connect-mongo");
 const flash = require("connect-flash");
 const GrandSchema = require('./schema_&_model');  
-const mongo_url = process.env.MONGO_URL ;
+const mongo_url = "mongodb+srv://TM_sotware_owner:2005@cluster0.6hhoa.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0";
       
 // Connection to database 
 connect_db();

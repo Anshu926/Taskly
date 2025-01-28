@@ -1,0 +1,311 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.user-details-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.user-image img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    margin-top: 20px;
+}
+
+.user-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+strong {
+    color: #333;
+}
+
+.action-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-back {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://t3.ftcdn.net/jpg/06/76/11/34/360_F_676113431_1rqsM7P24VBWGZiFVyLjJOxyQtCgEqKk.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.user-image img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.user-image img:hover {
+    transform: scale(1.1);
+}
+
+.user-info {
+    margin-top: 20px;
+}
+
+.user-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+strong {
+    color: #333;
+}
+
+.action-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-back {
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    border: 2px solid rgb(138, 196, 233);
+    color: #318ef0;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-back:hover {
+    color: darkblue;
+    background-color: transparent;
+}
+
+.up-btn, .del-btn {
+    padding: 0.5rem 0.8rem; /* Unified padding */
+    border: none;
+    border-radius: 2rem;
+    font-size: 0.9rem; /* Slightly smaller font for better fit */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Update Button */
+.up-btn {
+    background-color: #e6f0f9; /* Soft blue background */
+    color: #0056b3; /* Professional blue text */
+    border: 1px solid #b3d8f3; /* Subtle border */
+}
+
+.up-btn:hover {
+    background-color: #cce4f7; /* Darker blue on hover */
+    color: #004085;
+    border-color: #99c2e6;
+}
+
+/* Delete Button */
+.del-btn {
+    background-color: #f9e6e6; /* Soft red background */
+    color: #b30000; /* Professional red text */
+    border: 1px solid #f3b3b3; /* Subtle border */
+}
+
+.del-btn:hover {
+    background-color: #f7cccc; /* Darker red on hover */
+    color: #800000;
+    border-color: #e69999;
+}
+/* TO-DO Button */
+.to-do-btn {
+    background-color: #e8f9e6; /* Soft red background */
+    color: #2bc041; /* Darker red text */
+    border: 1px solid #b3f3bb; /* Subtle border */
+    padding: 0.5rem 1rem; /* Add spacing for better appearance */
+    font-size: 1rem; /* Standard font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: all 0.3s ease-in-out;/* Smooth hover effect */
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 1px solid #2bc041; ;
+}
+
+.to-do-btn:hover {
+    background-color: #ccf7d1; /* Slightly darker red */
+    color: #2aa84c; /* Even darker text color */
+    border-color: #99e6ac;
+    transform: scale(1.05); /* Button enlarges slightly */
+}
+
+.btns{
+    display: flex;
+    gap: 0.5rem;
+}
+* Dark theme navigation styles */
+.nav.nav-underline {
+    background-color: #212529 !important; /* Bootstrap dark background */
+    border-bottom: 1px solid #343a40 !important; /* Subtle underline */
+}
+
+.nav.nav-underline .nav-link {
+    color: #f8f9fa !important; /* Light text */
+    padding: 0.5rem 1rem !important;
+}
+
+
+.nav.nav-underline .nav-link.active {
+    font-weight: bold !important;
+    border-bottom: 2px solid #0d6efd !important; /* Active underline */
+}
+
+.nav.nav-underline .nav-link.disabled {
+    color: #6c757d !important; /* Muted color for disabled link */
+}
+
+header{
+    padding: 1rem;
+    background-color: #212529;
+}
+.main{
+    display: flex !important;
+    padding: 0.5rem !important;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+        /* General Flash Message Styles */
+        .flash-message {
+            padding: 10px;
+            margin: 10px auto;
+            width: 95%;
+            text-align: center;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            color: #fff;
+            opacity: 0;
+            transform: translateX(-10px);
+            animation: popupAnimation 0.5s ease-out forwards;
+        }
+        .flash-message.success {
+            background-color: #c2f8c3;
+            border: 1px solid green;
+            color: green;
+        }
+        .flash-message.error {
+            background-color: #f44336;
+        }
+        @keyframes popupAnimation {
+            0% {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .flash-message .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5rem;
+            color: #fff;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .flash-message .close-btn:hover {
+            color: #ccc;
+        }
+        #map {
+            width: 25vw;
+            height: 60vh;
+            border-radius: 2rem;
+            margin: 2rem auto;
+            border: 2px solid #ccc;
+        }
+
+.user-details-card{
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 55vw;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 2rem;
+}
+.info{
+    background-color: red;
+    padding: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(223, 246, 246,0.2);
+}

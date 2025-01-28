@@ -1,0 +1,154 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 50px;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center !important;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    background-color: #ededef !important;
+    width: 90vw !important;
+    margin-top: 4rem !important;
+    border-radius: 2rem !important;
+    padding: 2rem !important;
+}
+
+/* Card */
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 1rem !important; 
+    padding-bottom:0 !important;
+    border-radius: 1rem !important;
+    width: 100% !important;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.card-body {
+    padding: 12px;
+    padding-bottom: 0 !important;
+    text-align: left;
+}
+
+.card-body h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #3498db;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Capsule */ 
+.capsule {
+    display: flex;
+    padding: 0.2rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* Dark theme navigation styles */
+.nav.nav-underline {
+    background-color: #212529 !important; /* Bootstrap dark background */
+    border-bottom: 1px solid #343a40 !important; /* Subtle underline */
+}
+
+.nav.nav-underline .nav-link {
+    color: #f8f9fa !important; /* Light text */
+    padding: 0.5rem 1rem !important;
+}
+
+
+.nav.nav-underline .nav-link.active {
+    font-weight: bold !important;
+    border-bottom: 2px solid #0d6efd !important; /* Active underline */
+}
+
+.nav.nav-underline .nav-link.disabled {
+    color: #6c757d !important; /* Muted color for disabled link */
+}
+
+header{
+    padding: 1rem;
+    background-color: #212529;
+}
+.main{
+    display: flex !important;
+    padding: 0.5rem !important;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+
+
+
+/* Optional: You can customize the navbar with additional styling */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+}
+
+.navbar-nav .btn {
+    margin-left: 10px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+header{
+    padding-left: 4rem !important;
+}
+
+.view_btn{
+    background-color: #e6f0f9 !important; /* Soft blue background */
+    color: #0056b3 !important; /* Professional blue text */
+    border: 1px solid #b3d8f3 !important; /* Subtle border */
+
+}
+.view_btn:hover{
+    background-color: #cfe3f4 !important; /* Soft blue background */
+    color: rgb(13, 13, 40) !important; /* Professional blue text */
+    border: 1px solid #b3d8f3 !important; /* Subtle border */
+}
+
+
+

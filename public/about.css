@@ -1,0 +1,163 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* About Section */
+.about-section {
+    padding: 40px 20px;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* Container to center content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* About Card Styling */
+.about-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* Founder Info Section */
+.founder-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Founder Photo Styling */
+.founder-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Founder Details Styling */
+.founder-details {
+    max-width: 600px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.founder-details h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.founder-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.founder-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.founder-details a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Home Button Styling */
+.btn-back {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+}
+
+/* Back Button Container */
+.back-btn-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-card {
+        flex-direction: column;
+    }
+
+    .founder-photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .founder-details {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .founder-photo img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .founder-details h2 {
+        font-size: 22px;
+    }
+
+    .founder-details p {
+        font-size: 14px;
+    }
+
+    .btn-back {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .founder-photo img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .founder-details h2 {
+        font-size: 20px;
+    }
+
+    .founder-details p {
+        font-size: 12px;
+    }
+
+    .btn-back {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}

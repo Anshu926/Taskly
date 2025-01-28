@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supervised Users</title>
+    <link rel="stylesheet" href="/supervised.css">
+</head>
+<body>
+    <header>
+        <h1>Supervised Users Information</h1>
+        <a href="/home" class="back" style=" color: gainsboro !important;">Back To Home</a>
+
+    </header>
+    <br>
+    <div class="supervised-container">
+        <h2>Supervisors</h2>
+        <br>
+        <div class="supervisor-list">
+            <% users.forEach(user => { %>
+                <div class="supervisor">
+                    <h3><%= user.username %></h3> <!-- Only display supervisor's name -->
+                    <div class="supervised-users">
+                        <h4>Users Created by <%= user.username %>:</h4>
+                        <br>
+                        <% grandData.forEach(grand => { %>
+                            <% if(grand.owner && grand.owner._id.equals(user._id)) { %>
+                                <p><%= grand.name %></p> <!-- Display only user's name created by the supervisor -->
+                            <% } %>
+                        <% }) %>
+                    </div>
+                </div>
+            <% }) %>
+       
+        </div>
+  
+    </div>
+
+    <br><br>
+
+
+</body>
+</html>
